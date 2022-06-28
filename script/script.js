@@ -50,7 +50,7 @@ class Jogo {
         for (let j = 0; j < 2; j++) {
             this.embaralharDirCartas()
             for (let i = 0; i < this.qtdPares; i++) {
-                let carta = new Carta(`../assets/images/${this.imgDirCartas[i]}`, numId)
+                let carta = new Carta(`./assets/images/${this.imgDirCartas[i]}`, numId)
                 carta = carta.criarElementoHtml()
                 this.cartas.push(carta)
                 numId += 1
